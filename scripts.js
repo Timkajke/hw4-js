@@ -71,10 +71,44 @@ else {
 // При этом также посчитать, сколько четных и нечетных. Вывести статистику на экран. 
 // Учтите, что достаточно одной переменной (не 10) для ввода чисел пользователем.
 
-/* НЕ РЕШЕНО */
+/* let number;
+let quantityOfPositiveNumbers = 0;
+let quantityOfNegativeNumbers = 0;
+let quantityOfZeros = 0;
+let quantityOfEvenNumbers = 0;
+let quantityOfOddNumbers = 0;
+for (let i = 0; i < 10; i++) {
+    number = parseInt(prompt("Enter 10 numbers"));
+    if (number % 2 === 0 && number > 0) {
+        quantityOfEvenNumbers++;
+        quantityOfPositiveNumbers++;
+    }
+    else if (number % 2 !== 0 && number > 0) {
+        quantityOfOddNumbers++;
+        quantityOfPositiveNumbers++;
+    }
+    else if (number < 0 && number % 2 === 0) {
+        quantityOfEvenNumbers++;
+        quantityOfNegativeNumbers++;
+    }
+    else if (number < 0 && number % 2 !== 0) {
+        quantityOfOddNumbers++;
+        quantityOfNegativeNumbers++;
+    }
+    else if (number === 0)
+        quantityOfZeros++;
 
-// Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример, 
-// вывести результат и спросить, хочет ли он решить еще один пример. 
+    else
+        alert("Oops! Something went wrong!");
+}
+alert(`Quantity Of Positive Numbers is ${quantityOfPositiveNumbers}
+Quantity Of Negative Numbers is ${quantityOfNegativeNumbers}
+Quantity Of Zeros is ${quantityOfZeros}
+Quantity Of Even Numbers is ${quantityOfEvenNumbers}
+Quantity Of Odd Numbers is ${quantityOfOddNumbers}`); */
+
+// Зациклить калькулятор. Запросить у пользователя 2 числа и знак, решить пример,
+// вывести результат и спросить, хочет ли он решить еще один пример.
 // И так до тех пор, пока пользователь не откажется
 
 /* do {
@@ -149,5 +183,5 @@ while (confirm(`${daysOfWeek[currentDay]}. Хотите увидеть след�
 // диапазон на от 51 до 100. И так до тех пор, пока пользова-
 // тель не выберет == N.
 
-let number = +prompt("Enter an asking number from 0 to 100!");
-let numberToAnswer = +prompt("Enter a number!");
+/* let number = +prompt("Enter an asking number from 0 to 100!");
+let numberToAnswer = +prompt("Enter a number!"); */
